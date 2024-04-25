@@ -1,5 +1,3 @@
-Sure, here's a GitHub README for your Typescript, Tailwind, and HTML project:
-
 ---
 
 # Typescript, Tailwind, and HTML Template
