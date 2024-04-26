@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tsc src/index.ts --outFile ./dist/index.js & npx tailwindcss build src/main.css -o dist/main.css --watch"
+    "dev": "npx tsc --project tsconfig.json && find ./src -type f -name '*.js' -exec cp {} ./dist \\; && npx tailwindcss build src/main.css -o dist/main.css --watch"
   },
   "keywords": [],
   "author": "",
