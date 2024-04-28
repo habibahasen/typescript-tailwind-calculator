@@ -3,15 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ts-tailwind template</title>
+    <title>simple Calculator</title>
     <link href="../dist/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-0mSb0wzVhOKs6A7E7hAYjw5pZ5Qm7jiuIDzCyRUJxyb9DI5ELD/HJFgcLlOixb4S" crossorigin="anonymous">
+
   </head>
-  <body>
-    <div class="flex w-full h-screen justify-center items-center">
-        <div class="flex text-orange-500 text-3xl">
-            Yeey, I am in center
-        </div>
+  <body class="flex w-full h-screen justify-center items-center">
+    <div>
+      <div class="flex text-orange-500 text-3xl"></div>
+      <div class="container" style="display: flex; align-items: center">
+        <input
+          id="result"
+          style="
+            flex-grow: 1;
+            background-color: white;
+            padding: 8px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            text-align: right;
+          "
+          type="text"
+          readonly
+        />
+        <button
+          id="btnClear"
+          class="btn-clear"
+          style="
+            background-color: #138d5c;
+            color: white;
+            border: none;
+            padding: 10px 27px;
+            cursor: pointer;
+          "
+        >
+          AC
+        </button>
+      </div>
+      <div class="grid grid-cols-4 mb-4">
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400">
+          9
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          8
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          7
+        </button>
+        <button
+          class="col-span-1 text-white bg-gray-400 hover:bg-yellow-500 py-2"
+        >
+          +
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400">
+          6
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          5
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          4
+        </button>
+        <button
+          class="col-span-1 text-white bg-gray-400 hover:bg-yellow-500 py-2"
+        >
+          -
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400">
+          3
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          2
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          1
+        </button>
+        <button
+          class="col-span-1 text-white bg-gray-400 hover:bg-yellow-500 py-2"
+        >
+        /
+        </button>
+
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          .
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          0
+        </button>
+        <button class="col-span-1 text-white bg-black hover:bg-gray-400 py-2">
+          =
+        </button>
+        <button
+          class="col-span-1 text-white bg-gray-400 hover:bg-yellow-500 py-2"
+        >
+          *
+        </button>
+      </div>
     </div>
+
     <script src="../dist/index.js"></script>
   </body>
 </html>
